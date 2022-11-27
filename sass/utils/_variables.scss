@@ -1,0 +1,53 @@
+:root {
+  --main-color: #212121;
+  --second-color: #757575;
+  --main-backgraund-color: #f5f5f5;
+  --active-color: #2196f3;
+  --second-becgraund-color: #2f303a;
+  --line-color: #ececec;
+  --social-icone-color: #afb1b8;
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
+  --title-display: none;
+  --duration: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --main-letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: 14px;
+  letter-spacing: var(--main-letter-spacing);
+}
+
+@mixin border($size: 1px, $type: solid, $color: rgba(255, 255, 255, 0.3)) {
+  border: $size $type $color;
+}

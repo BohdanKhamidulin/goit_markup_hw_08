@@ -1,0 +1,40 @@
+.clients {
+  @extend %section;
+}
+.clients__conteiner {
+  @extend %conteiner;
+}
+.clients__title {
+  @extend %title;
+}
+
+.clients__logo {
+  fill: currentColor;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  @include border($color: currentColor);
+
+  border-radius: 4px;
+  color: var(--social-icone-color);
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  @extend %link;
+
+  &:hover {
+    color: var(--active-color);
+  }
+}

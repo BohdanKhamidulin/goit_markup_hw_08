@@ -1,0 +1,18 @@
+.logo {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  margin-right: 93px;
+
+  @extend %link;
+  & .logo__footer--second-part {
+    color: #ffffff;
+  }
+}
+.logo__header--second-part {
+  font-family: var(--second-font);
+  color: var(--main-color);
+}

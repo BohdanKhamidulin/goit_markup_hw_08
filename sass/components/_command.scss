@@ -1,0 +1,70 @@
+.command__conteiner {
+  @extend %conteiner;
+}
+.command__title {
+  @extend %title;
+}
+
+.command__social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 10px;
+}
+.command__item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+}
+.command__description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.command__expert-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+
+.command__expert-position {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--second-color);
+}
+.command__list {
+  display: flex;
+  column-gap: 30px;
+  @extend %list;
+}
+.command {
+  background: #f5f4fa;
+  @extend %section;
+}
+
+.command__social-icon {
+  fill: currentColor;
+}
+
+.command__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--social-icone-color);
+  transition-property: background-color, color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  @extend %link;
+
+  &:hover {
+    background-color: var(--active-color);
+    color: #ffffff;
+  }
+}

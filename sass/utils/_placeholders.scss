@@ -1,0 +1,38 @@
+%link {
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--active-color);
+  }
+}
+%list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+%conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+%title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: var(--main-letter-spacing);
+}
+%wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
