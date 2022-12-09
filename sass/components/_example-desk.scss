@@ -3,6 +3,7 @@
 }
 .example__conteiner {
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .example__btn-item:not(:last-child) {
@@ -15,6 +16,12 @@
   justify-content: center;
   margin-bottom: 50px;
   @extend %list;
+
+  @media screen and(max-width:767px) {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
 }
 
 .example__btn {
@@ -43,6 +50,13 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+
+.example__desk-item {
+  @media screen and(max-width:1199px) {
+    width: 354px;
+    padding: 0 15px;
+  }
+}
 .example__team-overlay {
   position: absolute;
   top: 0;
@@ -60,11 +74,21 @@
 }
 .example__desk-list {
   display: flex;
-  justify-content: space-between;
+
   flex-wrap: wrap;
   gap: 30px;
 
   @extend %list;
+  @media screen and(min-width:1200px) {
+    justify-content: space-between;
+  }
+
+  // @media screen and(max-width:1199px) {
+  // }
+
+  @media screen and(max-width:767px) {
+    justify-content: center;
+  }
 }
 .example__border {
   border-top: none;
