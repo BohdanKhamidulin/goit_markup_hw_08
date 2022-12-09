@@ -1,0 +1,141 @@
+.menu-container,
+.menu-toggle {
+  @media (min-width: 767px) {
+    display: none;
+  }
+}
+.menu-toggle {
+  @media screen and(max-width:767px) {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mobile-menu .link {
+  display: block;
+  width: 139px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: var(--main-color);
+  text-decoration: none;
+
+  &.header__link--current {
+    color: var(--active-color);
+  }
+}
+.menu_button-close {
+  fill: var(--main-color);
+  border: currentColor;
+
+  &:hover,
+  &:focus {
+    fill: var(--active-color);
+  }
+}
+.menu__social-list {
+  display: flex;
+}
+.menu__social-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.menu__social-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.menu__social-item:not(:last-child) {
+  padding-right: 10px;
+}
+.menu__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  @extend %link;
+
+  color: var(--active-color);
+}
+.mobile_menu-item {
+  margin-bottom: 32px;
+}
+.menu_telephone {
+  margin-bottom: 32px;
+}
+.menu_telephone-link {
+  width: 296px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+
+  @extend %link;
+  color: var(--active-color);
+}
+.menu_mail-link {
+  width: 231px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+
+  @extend %link;
+}

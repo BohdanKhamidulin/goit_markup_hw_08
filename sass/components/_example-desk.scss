@@ -2,7 +2,7 @@
   @extend %section;
 }
 .example__conteiner {
-  @extend %conteiner;
+  margin: 0 auto;
 }
 
 .example__btn-item:not(:last-child) {
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
-  @extend .list;
+  @extend %list;
 }
 
 .example__btn {
@@ -60,6 +60,7 @@
 }
 .example__desk-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 

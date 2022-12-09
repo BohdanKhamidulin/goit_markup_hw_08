@@ -14,14 +14,16 @@
   padding-left: 0;
   margin: 0;
 }
-%conteiner {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  @media screen and(max-width:1199.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 %title {
   margin-bottom: 50px;

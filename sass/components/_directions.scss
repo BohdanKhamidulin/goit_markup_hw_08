@@ -1,5 +1,8 @@
 .directions {
-  @extend .section;
+  @extend %section;
+  @media screen and(max-width:1199.98px) {
+    display: none;
+  }
 }
 .directions__conteiner {
   @extend %conteiner;
@@ -13,7 +16,7 @@
 .directions__list {
   display: flex;
   column-gap: 30px;
-  @extend .list;
+  @extend %list;
 }
 .directions__wrapper {
   position: relative;

@@ -6,6 +6,11 @@
 }
 .clients__title {
   @extend %title;
+  @media screen and(max-width:1199.98px) {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+  }
 }
 
 .clients__logo {
@@ -15,7 +20,11 @@
 .clients__list {
   display: flex;
   justify-content: center;
+
   gap: 30px;
+  @media screen and(max-width:1199px) {
+    flex-wrap: wrap;
+  }
 }
 .clients__link {
   display: flex;
@@ -36,5 +45,13 @@
 
   &:hover {
     color: var(--active-color);
+  }
+
+  @media screen and(min-width:$tablet) {
+    width: 170px;
+  }
+  @media screen and(min-width:$tablet) and(max-width:1199px) {
+    width: 226px;
+    height: 92px;
   }
 }

@@ -27,19 +27,19 @@
             >Web<span class="logo__header--second-part">Studio</span></a
           >
           <ul class="header__list">
-            <li class="header__item">
+            <li class="header__item header__item-nth">
               <a class="header__link" href="./index.html">Студія</a>
             </li>
-            <li class="header__item">
+            <li class="header__item header__item-nth">
               <a class="header__link header__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="header__item">
+            <li class="header__item header__item-nth">
               <a class="header__link" href="./index.html">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header__list">
-          <li class="header__item">
+        <ul class="header__list header__list-contacts">
+          <li class="header__item header-item__contacts">
             <a class="header__contacts" href="mailto:info@devstudio.com"
               ><svg width="16" height="12">
                 <use href="./icon/sprite-svg.svg#icon-letter"></use>
@@ -47,7 +47,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="header__item">
+          <li class="header__item header-item__contacts">
             <a class="header__contacts" href="tel:+380961111111"
               ><svg width="10" height="16">
                 <use href="./icon/sprite-svg.svg#icon-telephone"></use>
@@ -56,6 +56,11 @@
             >
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="mobile menu switcher">
+            <use class="icon-menu" href="./icon/sprite-svg.svg#burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -406,6 +411,82 @@
         </button>
       </div>
     </div>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="link">Студія</a></li>
+        <li><a href="./portfolio.html" class="link header__link--current">Портфоліо</a></li>
+        <li><a href="" class="link">Контакти</a></li>
+      </ul>
+      <ul class="menu_contacts">
+        <li><a class="link" href="tel:+380961111111"> +38 096 111 11 11</a></li>
+        <li>
+          <a class="link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="menu__social-list">
+        <li class="menu__social-item">
+          <a
+            class="menu__social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rell="nofollow noopener noreferrer"
+            >Instagram
+          </a>
+        </li>
+        <li class="menu__social-item">
+          <a
+            class="menu__social-link"
+            href="https://twitter.com/"
+            target="_blank"
+            rell="nofollow noopener noreferrer"
+            >Twitter
+          </a>
+        </li>
+        <li class="menu__social-item">
+          <a
+            class="menu__social-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rell="nofollow noopener noreferrer"
+            >Facebook
+          </a>
+        </li>
+        <li class="menu__social-item">
+          <a
+            class="menu__social-link"
+            href="https://www.linkedin.com/feed/"
+            target="_blank"
+            rell="nofollow noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
