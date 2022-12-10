@@ -13,14 +13,20 @@
 .example__btn-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   margin-bottom: 50px;
   @extend %list;
+  @media screen and(min-width:1200px) {
+    justify-content: center;
+  }
 
   @media screen and(max-width:767px) {
     flex-wrap: wrap;
-    gap: 8px;
+    row-gap: 8px;
     margin-bottom: 40px;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    padding: 6px 25px;
   }
 }
 
@@ -76,17 +82,19 @@
   display: flex;
 
   flex-wrap: wrap;
-  gap: 30px;
 
   @extend %list;
   @media screen and(min-width:1200px) {
+    row-gap: 30px;
     justify-content: space-between;
   }
-
-  // @media screen and(max-width:1199px) {
-  // }
-
+  @media screen and(max-width:1199px) {
+    gap: 30px;
+  }
   @media screen and(max-width:767px) {
+    justify-content: center;
+  }
+  &:not(:last-child) {
     justify-content: center;
   }
 }
@@ -94,6 +102,9 @@
   border-top: none;
   background: #ffffff;
   padding: 20px 24px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
 }
 .example__desk-link {
   display: block;
@@ -108,6 +119,11 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 }
 .example__desk-link:hover .example__team-overlay,
