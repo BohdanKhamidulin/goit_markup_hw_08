@@ -31,11 +31,6 @@
 .header__conteiner {
   border-bottom: 1px solid var(--line-color);
   @extend %conteiner;
-
-  // mobile
-  @media screen and (max-width: 767.98px) {
-    width: 450px;
-  }
   display: flex;
   align-items: center;
   justify-content: space-between;
