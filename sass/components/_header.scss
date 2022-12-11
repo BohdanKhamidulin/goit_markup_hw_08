@@ -88,7 +88,7 @@ a.header__link.header__link--current {
 .header__contacts {
   display: flex;
   align-items: center;
-
+  fill: currentColor;
   gap: 10px;
   font-weight: 500;
   line-height: 1.14;
