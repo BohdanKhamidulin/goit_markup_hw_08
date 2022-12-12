@@ -54,6 +54,7 @@
         url(../image/index/hero/Imgds_3200.jpg);
       height: 600px;
       width: 1600px;
+      padding: 200px 0;
     }
   }
 }
@@ -102,4 +103,7 @@
     color: var(--active-color);
     background-color: var(--main-backgraund-color);
   }
+}
+.hero-conteiner {
+  @extend %conteiner;
 }

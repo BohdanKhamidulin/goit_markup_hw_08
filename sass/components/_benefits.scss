@@ -37,12 +37,6 @@
   font-size: 14px;
   margin-bottom: 10px;
 
-  padding: 0 15px;
-
-  @media screen and(min-width:1200px) {
-    text-align: center;
-  }
-
   @media screen and(max-width:767px) {
     text-align: center;
   }
@@ -61,7 +55,6 @@
   // }
 }
 .benefits-text {
-  padding: 0 15px;
   line-height: 1.71;
   color: var(--second-color);
 }
