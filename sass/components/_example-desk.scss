@@ -13,6 +13,7 @@
 .example__btn-list {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   margin-bottom: 50px;
   @extend %list;
@@ -27,7 +28,6 @@
   }
   @media screen and(min-width:768px) and(max-width:1199px) {
     padding: 6px 25px;
-    justify-content: center;
   }
 }
 
