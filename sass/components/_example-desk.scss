@@ -13,7 +13,6 @@
 .example__btn-list {
   display: flex;
   align-items: center;
-  justify-content: center;
 
   margin-bottom: 50px;
   @extend %list;
@@ -28,6 +27,7 @@
   }
   @media screen and(min-width:768px) and(max-width:1199px) {
     padding: 6px 25px;
+    justify-content: center;
   }
 }
 
@@ -61,7 +61,6 @@
 .example__desk-item {
   @media screen and(max-width:1199px) {
     width: 354px;
-    padding: 0 15px;
   }
 }
 .example__team-overlay {
